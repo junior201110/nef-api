@@ -1,0 +1,15 @@
+{
+  "name": "NefApi/NEF",
+  "description": "Api To React ReactNative Android",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Washington Junior",
+      "email": "junior201110@gmail.com"
+    }
+  ],
+  "require": {
+    "slim/slim": "^3.0"
+  }
+}
