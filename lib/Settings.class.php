@@ -70,15 +70,15 @@ Class Settings{
     public static $DATABASE_NAME ;
     public static function getDefaultHost(){
         if(HOST_NAME != 'localhost'){
-            self::setHOST('localhost');
-            self::setDATABASENAME('nef_api');
-            self::setUSER('root');
-            self::setPASSWORD('root');
-        }else{
             self::setHOST('mysql.hostinger.com.br');
             self::setDATABASENAME('u771591478_nefdb');
             self::setUSER('u771591478_user');
             self::setPASSWORD('123404789');
+        }else{
+            self::setHOST('localhost');
+            self::setDATABASENAME('nef_api');
+            self::setUSER('root');
+            self::setPASSWORD('root');
         }
     }
 }
