@@ -4,7 +4,11 @@ Class DB{
     private static $PDOCONN;
 
     public static function openConnection(){
-        //TODO stop here
-        self::$PDOCONN = new PDO('host='.Settings::$HOST.';db=');
+        Settings::getDefaultHost();
+        self::$PDOCONN = new PDO('mysql:host='.Settings::getHOST().';dbname='.Settings::getDATABASENAME(),
+            Settings::getUSER(),
+            Settings::getPASSWORD()
+        );
+        var_dump(self::$PDOCONN);
     }
 }

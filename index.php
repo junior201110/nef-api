@@ -1,14 +1,12 @@
 <?
+define('HOST_NAME',$_SERVER['HTTP_HOST']);
 header('Content-Type: application/json');
 require 'vendor/autoload.php';
 $app = new Slim\App();
 
 $app->get('/',function(){
-    phpinfo();
-    echo "ok";
+    DB::openConnection();
 });
-
-
 
 $app->group('/app',function() use($app){
     $app->get('/react/{num1}/{num2}',function($request, $response, $args){
