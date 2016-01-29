@@ -5,7 +5,7 @@ Class DB{
 
     public static function openConnection(){
         Settings::getDefaultHost();
-        self::$PDOCONN = new PDO('mysql:host='.Settings::getHOST().';dbname='.Settings::getDATABASENAME(),
+        self::$PDOCONN = new PDO('pgsql:host='.Settings::getHOST().';dbname='.Settings::getDATABASENAME(),
             Settings::getUSER(),
             Settings::getPASSWORD()
         );
