@@ -7,7 +7,6 @@ $app = new Slim\App();
 
 $app->get('/',function(){
     var_dump($_SERVER);
-    DB::openConnection();
 });
 
 $app->group('/app',function() use($app){
