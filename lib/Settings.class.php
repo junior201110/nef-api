@@ -75,10 +75,10 @@ Class Settings{
             self::setUSER('u771591478_user');
             self::setPASSWORD('123404789');
         }else{
-            self::setHOST('localhost');
-            self::setDATABASENAME('nef_api');
-            self::setUSER('root');
-            self::setPASSWORD('root');
+            self::setHOST('ec2-107-22-184-127.compute-1.amazonaws.com');
+            self::setDATABASENAME('d3bn1e03hiioqj');
+            self::setUSER('rvyizvfsixmgsa');
+            self::setPASSWORD('_nZcZdlEfDrW0sPMH6PJrXne2o');
         }
     }
 }
