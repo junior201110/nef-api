@@ -69,7 +69,7 @@ Class Settings{
     }
     public static $DATABASE_NAME ;
     public static function getDefaultHost(){
-        if(HOST_NAME == 'localhost'){
+        if(HOST_NAME != 'localhost'){
             self::setHOST('localhost');
             self::setDATABASENAME('nef_api');
             self::setUSER('root');
