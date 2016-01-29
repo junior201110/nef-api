@@ -2,9 +2,11 @@
 define('HOST_NAME',$_SERVER['HTTP_HOST']);
 header('Content-Type: application/json');
 require 'vendor/autoload.php';
+require_once 'lib/Db.class.php';
 $app = new Slim\App();
 
 $app->get('/',function(){
+    var_dump($_SERVER);
     DB::openConnection();
 });
 
