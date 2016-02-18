@@ -9,6 +9,8 @@ Class DB{
             Settings::getUSER(),
             Settings::getPASSWORD()
         );
-        var_dump(self::$PDOCONN);
+    }
+    public static function query($sql,$parans = false){
+
     }
 }
