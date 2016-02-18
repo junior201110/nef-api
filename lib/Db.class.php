@@ -43,7 +43,7 @@ class Db{
                 $detalhes_pdo,$usuario,$senha);
             self::$conexao_pdo->exec("set names utf8");
         } catch (PDOException $e) {
-            print "Erro: " . $e->getMessage() . "<br>";
+            print "Erro: " . $e->getMessage() . "";
             die();
         }
     }
