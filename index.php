@@ -18,7 +18,7 @@ $app->group('/app',function() use($app){
     });
     $app->group('/user',function() use($app){
         $app->post('/login/',function(){
-
+		var_dump('OK');
         });
     });
 
