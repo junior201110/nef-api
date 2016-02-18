@@ -1,7 +1,6 @@
 {
   "name": "nefapi/nef",
   "description": "Api To React ReactNative Android",
-  "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
